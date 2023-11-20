@@ -30,6 +30,20 @@ NPM Version: `10.2.3`
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | POST `/search` | Body Params accepted as JSON: <br> `fileName`(string): Name of the file with extension <br> `line_count`(number): Min(1), Max(50), Default(10) <br> `query`(string): (Optional) text for basic name/keyword matching |
 
+# Sample Curl Request
+
+```
+curl --request POST \
+  --url http://localhost:3000/search \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: insomnia/8.3.0' \
+  --data '{
+	"file_name": "access_log_1.log",
+	"line_count": 5,
+	"query": "wp-admin"
+}'
+```
+
 ## Test Cases
 
 | Test case                                                    | Query                                                                                                           | Result                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
