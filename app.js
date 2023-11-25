@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
-const SearchRoutes = require('./search/routes.config')
+const SearchRoutes = require('./src/search/routes.config')
 
 app.use(express.json());
 
